@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('product/create', 'ProductController@create')->name('product.create');
 
 Route::get('product/{product}', 'ProductController@show')->name('product.show');
+
+Route::get('category/product/{product}', 'ProductController@removeCategory')->name('category.product.delete');
