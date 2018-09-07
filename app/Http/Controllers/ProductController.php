@@ -21,4 +21,9 @@ class ProductController extends Controller
 
         return "Seccess";
     }
+
+    public function show(Product $product)
+    {
+        return view('product.show', compact('product'));
+    }
 }
